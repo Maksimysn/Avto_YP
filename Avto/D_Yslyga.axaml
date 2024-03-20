@@ -1,0 +1,34 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        Width="600" Height="400"
+        x:Class="Avto.D_Yslyga"
+        Title="Добавление услуги">
+    <DockPanel>
+        <StackPanel Width="200" Margin="10"> <!-- Изменяем ширину StackPanel, чтобы уместиться в новые размеры формы -->
+            <TextBlock Text="Название:"/>
+            <TextBox Name="NameTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Описание:"/>
+            <TextBox Name="DescriptionTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Цена:"/>
+            <TextBox Name="PriceTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Фото:"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBox Name="PhotoTextBox" Margin="0,0,10,0" Width="100"/>
+                <Button Content="Выбрать файл" Click="SelectFile_Click"/>
+            </StackPanel>
+            <TextBlock Text="Скидка:"/>
+            <TextBox Name="DiscountTextBox" Margin="0,0,0,10"/>
+            <Button x:Name="AddServiceButton" Content="Добавить" Click="AddService_Click" HorizontalAlignment="Center"/>
+            <Button x:Name="EditServiceButton" Content="Изменить" Click="EditService_Click" HorizontalAlignment="Center"/>
+
+
+
+
+        </StackPanel>
+        <!-- Изменяем размеры Image -->
+        <Image Name="PhotoImage" Stretch="Uniform" DockPanel.Dock="Right" VerticalAlignment="Center" Width="150" Height="150"/>
+    </DockPanel>
+</Window>

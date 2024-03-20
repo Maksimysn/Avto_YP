@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Avto.Zakaz"
+        Title="Заказы">
+    
+        
+        <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- DataGrid для отображения таблицы заказов -->
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                        <DataGrid Name="OrdersGrid" x:CompileBindings="False">
+                                <DataGrid.Columns>
+                                        <DataGridTextColumn Header="ID" Binding="{Binding Path=orderID}" />
+                                        <DataGridTextColumn Header="Имя клиента" Binding="{Binding Path=nameC}" />
+                                        <DataGridTextColumn Header="Название услуги" Binding="{Binding Path=name}" />
+                                        <DataGridTextColumn Header="Дата заказа" Binding="{Binding Path=date}" />
+                                       
+                                </DataGrid.Columns>
+                        </DataGrid>
+                </ScrollViewer>
+
+                <!-- Кнопки для действий с заказами -->
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10">
+                        <!-- Кнопка для добавления нового заказа -->
+                        <Button Content="Добавить заказ" Click="AddOrder_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                        <!-- Кнопка для редактирования заказа -->
+                        <Button Content="Редактировать" Click="EditOrder_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                        <!-- Кнопка для удаления заказа -->
+                        <Button Content="Удалить" Click="DeleteOrder_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+                </StackPanel>
+        </Grid>
+        
+        
+        
+</Window>

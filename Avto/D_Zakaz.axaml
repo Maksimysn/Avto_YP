@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Avto"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Avto.D_Zakaz"
+        Title="Добавить заказ">
+    
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+        <TextBlock Text="Выберите клиента:" Margin="0,0,0,10"/>
+        <ComboBox x:Name="CustomersComboBox" Width="200" Margin="0,0,0,10"/>
+        
+        <TextBlock Text="Выберите услугу:" Margin="0,0,0,10"/>
+        <ComboBox x:Name="ServicesComboBox" Width="200" Margin="0,0,0,10"/>
+        
+        <TextBlock Text="Выберите дату заказа:" Margin="0,0,0,10"/>
+        <DatePicker x:Name="DatePicker" Width="200" Margin="0,0,0,10"/>
+        
+        <Button x:Name="AddOrderButton" Content="Добавить заказ" Click="AddOrderButton_Click" Width="150"/>
+    </StackPanel>
+
+</Window>

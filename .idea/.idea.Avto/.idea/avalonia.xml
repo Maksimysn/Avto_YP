@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Avto/D_Yslyga.axaml" value="Avto/Avto.csproj" />
+        <entry key="Avto/D_Zakaz.axaml" value="Avto/Avto.csproj" />
+        <entry key="Avto/E_Yslyga.axaml" value="Avto/Avto.csproj" />
+        <entry key="Avto/Main.axaml" value="Avto/Avto.csproj" />
+        <entry key="Avto/MainWindow.axaml" value="Avto/Avto.csproj" />
+        <entry key="Avto/Yslyga.axaml" value="Avto/Avto.csproj" />
+        <entry key="Avto/Zakaz.axaml" value="Avto/Avto.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
